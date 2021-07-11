@@ -106,9 +106,3 @@ Make sure docker is running and you have [Docker Compose](https://docs.docker.co
 - redis: Cache
 - airflow: Workflow Orchestrator
 - bridge server: Receives webhook from Grafana and translates to Airflow REST API
-
-## gotchas:
-
-### Postgres:
-
-_Warning: scripts in /docker-entrypoint-initdb.d are only run if you start the container with a data directory that is empty; any pre-existing database will be left untouched on container startup._
